@@ -1,0 +1,122 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(45deg,rgb(248, 159, 159),rgb(236, 236, 108),rgb(179, 185, 179));
+    align-items: center;
+    justify-content: center;
+}
+.outer{
+      /* background-image:linear-gradient(45deg,rgb(148, 137, 137),rgb(158, 158, 121),rgb(103, 110, 103)); */
+/* justify-content: center; */
+display:flex;
+height:300px;
+width:100%;
+
+}
+
+.circle1{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    margin: auto;
+    /* background-color: red; */
+    background-image:radial-gradient(circle,rgb(248, 159, 159),rgb(112, 112, 7),rgb(179, 185, 179));
+    margin: auto;
+    /* float:left; */
+    /* margin:20px; */
+    position: relative;
+    animation-name:circle;
+    border:2px solid black;
+animation-duration:0.6s;
+animation-iteration-count:infinite;
+}
+.circle2{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    margin: auto;
+    /* background-color: green; */
+    background-image:radial-gradient(circle,rgb(110, 20, 20),rgb(236, 236, 108),rgb(179, 185, 179));
+    position: relative;
+    animation-name:circle;
+    border:2px solid black;
+animation-duration:0.8s;
+animation-iteration-count:infinite;
+}
+.circle3{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    margin: auto;
+    /* background-color: blue; */
+    background-image:radial-gradient(circle,rgb(66, 38, 119),rgb(236, 236, 108),rgb(179, 185, 179));
+    position: relative;
+    animation-name:circle;
+    border:2px solid black;
+animation-duration:1s;
+animation-iteration-count:infinite;
+}
+.circle4{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    margin: auto;
+    /* background-color: pink; */
+    background-image:radial-gradient(circle,rgb(41, 165, 202),rgb(236, 236, 108),rgb(179, 185, 179));
+    position: relative;
+    animation-name:circle;
+    border:2px solid black;
+animation-duration:1.4s;
+animation-iteration-count:infinite;
+}
+.circle5{
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    margin: auto;
+    /* background-color: yellow; */
+    background-image:radial-gradient(circle,rgb(246, 250, 26),rgb(236, 236, 108),rgb(179, 185, 179));
+    border:2px solid black;
+    position: relative;
+    animation-name:circle;
+animation-duration:1.7s;
+animation-iteration-count:infinite;
+}
+@keyframes circle {
+    0%{
+        top:0px;
+        left:0px;
+        /* filter: hue-rotate(20); */
+    }
+    50%{
+        top: 250px;
+        left:0px;
+        width:110px;
+        transform:scale(0.7);
+        /* transform: translate(2,4); */
+        /* transform: translateX(3); */
+        /* animation-timing-function: ease-out; */
+
+
+    }
+    100%{
+        top:0px;
+        left:0px;
+        /* transform: scale(1.5);    */
+    }
+}
+hr{
+    margin-top: 125px;
+    padding:0px;
+border-width:10px;
+border-color: black;
+
+}
+.last{
+    background-image: linear-gradient(90deg,rgb(119, 119, 74),green,rgb(36, 36, 211));
+    height: 300px;
+    width: 100%;
+}
